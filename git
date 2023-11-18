@@ -1,0 +1,371 @@
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02
+$ git init
+Initialized empty Git repository in D:/Git Lab 02/.git/
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git config --global init.defaultBranch main
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git branch -m main
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git config --global user.name "2290"
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git config --global user.email "mdnurnabirana.cse@gmail.com"
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git config --global user.name
+2290
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git config --global user.email
+mdnurnabirana.cse@gmail.com
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        firstFile.cpp
+        firstFile.exe
+        firstFile.o
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git add .
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git commit -m "First File Added"
+[main (root-commit) 67f8fc2] First File Added
+ 3 files changed, 7 insertions(+)
+ create mode 100644 firstFile.cpp
+ create mode 100644 firstFile.exe
+ create mode 100644 firstFile.o
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git remote add origin https://github.com/mdnurnabirana/gitLab2.git
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git branch -M main
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 285.71 KiB | 6.49 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mdnurnabirana/gitLab2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git checkout -b feature/signUpBtn
+Switched to a new branch 'feature/signUpBtn'
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git status
+On branch feature/signUpBtn
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        signUpBtn.cpp
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git add .
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git commmit -m "Sign Up Button Added"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git push -u origin feature/signUpBtn
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature/signUpBtn' on GitHub by visiting:
+remote:      https://github.com/mdnurnabirana/gitLab2/pull/new/feature/signUpBtn
+remote:
+To https://github.com/mdnurnabirana/gitLab2.git
+ * [new branch]      feature/signUpBtn -> feature/signUpBtn
+branch 'feature/signUpBtn' set up to track 'origin/feature/signUpBtn'.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git commit -m "Sign Up Button Added"
+[feature/signUpBtn b5b054b] Sign Up Button Added
+ 3 files changed, 7 insertions(+)
+ create mode 100644 signUpBtn.cpp
+ create mode 100644 signUpBtn.exe
+ create mode 100644 signUpBtn.o
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git push -u origin feature/signUpBtn
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 285.71 KiB | 6.21 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mdnurnabirana/gitLab2.git
+   67f8fc2..b5b054b  feature/signUpBtn -> feature/signUpBtn
+branch 'feature/signUpBtn' set up to track 'origin/feature/signUpBtn'.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        signUpBtn.cpp
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git commmit -m "added"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        signUpBtn.cpp
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git commit -m "added"
+On branch feature/signUpBtn
+Your branch is up to date with 'origin/feature/signUpBtn'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   signUpBtn.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git add .
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git commit -m "Sign Up Button Added"
+[feature/signUpBtn e69cd71] Sign Up Button Added
+ 1 file changed, 1 deletion(-)
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git push -u origin feature/signUpBtn
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 291 bytes | 291.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mdnurnabirana/gitLab2.git
+   b5b054b..e69cd71  feature/signUpBtn -> feature/signUpBtn
+branch 'feature/signUpBtn' set up to track 'origin/feature/signUpBtn'.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git merge feature/signUpBtn
+Updating 67f8fc2..e69cd71
+Fast-forward
+ signUpBtn.cpp |   6 ++++++
+ signUpBtn.exe | Bin 0 -> 1047660 bytes
+ signUpBtn.o   | Bin 0 -> 1406 bytes
+ 3 files changed, 6 insertions(+)
+ create mode 100644 signUpBtn.cpp
+ create mode 100644 signUpBtn.exe
+ create mode 100644 signUpBtn.o
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git push -u origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mdnurnabirana/gitLab2.git
+   67f8fc2..e69cd71  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git checkout feature/signUpBtn
+Switched to branch 'feature/signUpBtn'
+Your branch is up to date with 'origin/feature/signUpBtn'.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git status
+On branch feature/signUpBtn
+Your branch is up to date with 'origin/feature/signUpBtn'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   firstFile.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git add .
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git commit -m "Modified First File"
+[feature/signUpBtn 0b554d0] Modified First File
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git push -u origin feature/signUpBtn
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mdnurnabirana/gitLab2.git
+   e69cd71..0b554d0  feature/signUpBtn -> feature/signUpBtn
+branch 'feature/signUpBtn' set up to track 'origin/feature/signUpBtn'.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (feature/signUpBtn)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 737 bytes | 1024 bytes/s, done.
+From https://github.com/mdnurnabirana/gitLab2
+   e69cd71..1c7c919  main       -> origin/main
+Updating e69cd71..1c7c919
+Fast-forward
+ firstFile.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git merge feature/signUpBtn
+Auto-merging firstFile.cpp
+CONFLICT (content): Merge conflict in firstFile.cpp
+Automatic merge failed; fix conflicts and then commit the result.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main|MERGING)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   firstFile.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main|MERGING)
+$ git add .
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main|MERGING)
+$ git commit -m "Merge Conflict Solved"
+[main 90d7dfe] Merge Conflict Solved
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mdnurnabirana/gitLab2.git
+   1c7c919..90d7dfe  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git log
+commit 90d7dfe3479ea57b40b7f4541fa77da6e0ecae2a (HEAD -> main, origin/main)
+Merge: 1c7c919 0b554d0
+Author: 2290 <mdnurnabirana.cse@gmail.com>
+Date:   Sat Nov 18 10:45:57 2023 +0600
+
+    Merge Conflict Solved
+
+commit 0b554d0e2a6c16b8db56c88ce9fb6fe47ee1216d (origin/feature/signUpBtn, feature/signUpBtn)
+Author: 2290 <mdnurnabirana.cse@gmail.com>
+Date:   Sat Nov 18 10:32:47 2023 +0600
+
+    Modified First File
+
+commit 1c7c9198ffb7a15ef8c9674890bbba655ba33718
+Author: Md. Nurnabi Rana <100693911+mdnurnabirana@users.noreply.github.com>
+Date:   Sat Nov 18 10:28:15 2023 +0600
+
+    Update firstFile.cpp
+
+commit e69cd716cab295c8b8f368287a6426df33c0900a
+Author: 2290 <mdnurnabirana.cse@gmail.com>
+Date:   Sat Nov 18 10:14:20 2023 +0600
+
+    Sign Up Button Added
+
+commit b5b054b431b10d6639f17e391d5439d8495055dc
+Author: 2290 <mdnurnabirana.cse@gmail.com>
+Date:   Sat Nov 18 10:05:52 2023 +0600
+
+    Sign Up Button Added
+
+commit 67f8fc2d2942289e864d549a330e4fd681daba5e
+Author: 2290 <mdnurnabirana.cse@gmail.com>
+Date:   Sat Nov 18 09:28:26 2023 +0600
+
+    First File Added
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git log --1 line
+fatal: ambiguous argument 'line': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git log --1line
+fatal: unrecognized argument: --1line
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git log --oneline
+90d7dfe (HEAD -> main, origin/main) Merge Conflict Solved
+0b554d0 (origin/feature/signUpBtn, feature/signUpBtn) Modified First File
+1c7c919 Update firstFile.cpp
+e69cd71 Sign Up Button Added
+b5b054b Sign Up Button Added
+67f8fc2 First File Added
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git branch -d signUpBtn
+error: branch 'signUpBtn' not found.
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git branch -d feature/signUpBtn
+Deleted branch feature/signUpBtn (was 0b554d0).
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$ git push origin --delete feature/signUpBtn
+To https://github.com/mdnurnabirana/gitLab2.git
+ - [deleted]         feature/signUpBtn
+
+Admin@DESKTOP-NJHDLK2 MINGW64 /d/Git Lab 02 (main)
+$
